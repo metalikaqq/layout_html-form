@@ -32,11 +32,11 @@
               How old are You?
             </label>
             <input
-              type="number" 
-              value="12" 
-              max="100"
-              min="5"
-              id="age"
+            type="number"
+            name="age"
+            min="1"
+            max="100"
+            value="12"
             >
           </div>
           <div class="form-field">
@@ -53,7 +53,10 @@
             <label for="agreewith1">
               I accept the term of the agreement
             </label>
-            <input type="checkbox" id="agreewith1">
+            <input 
+              type="checkbox" 
+              id="agreewith1"
+            >
           </div>
         </fieldset>
   
@@ -98,7 +101,6 @@
               >
               Yes
             </label>
-  
             <label>
               <input
                 type="radio"
@@ -108,14 +110,12 @@
               No
             </label>
           </div>
-
           <div class="form-field">
             <label for="colorChoose">
               What is your favorite color?
             </label>
             <input type="color" id="colorChoose">
           </div>
-
           <div class="form-field">
             <label for="time">
               What time do you go to bed? 
@@ -125,7 +125,6 @@
               id="time"
             >
           </div>
-          
           <div class="form-field">
             <label for="chooseCar">
               What are your favorite brand of cars?
@@ -140,7 +139,6 @@
               <option value="Lada">Lada</option>
             </select>
           </div>
-
           <div>
             <label for="rateJob">
               Would you rate your work?
@@ -148,10 +146,8 @@
             <input type="range" id="rateJob">
           </div>
         </fieldset>
-        
         <fieldset class="fieldset">
           <legend>Additional info:</legend>
-  
           <div class="form-field">
             <label for="feedback">
               Coments:
@@ -161,10 +157,11 @@
               id="feedback" 
               class="teaxtarea"
               autocomplete="off"
+              minlength="20"
+              maxlength="100"
             >
             </textarea>
           </div>
-
           <div>
             <label for="recommendation">
               Would you recommend us?
